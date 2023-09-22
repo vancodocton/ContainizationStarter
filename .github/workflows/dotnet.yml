@@ -1,0 +1,39 @@
+name: .NET CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - uses: actions/cache@v3
+      with:
+        path: ~/.nuget/packages
+        key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json', '**/dotnet-tools.json') }}
+        restore-keys: |
+          ${{ runner.os }}-nuget-
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+
+    - name: Restore dependencies
+      run: |
+        dotnet restore --locked-mode
+        dotnet tool restore
+
+    - name: Build
+      run: dotnet build -c Release --no-restore
+
+    - name: Format Checking
+      run: dotnet format --no-restore --verify-no-changes
+
+    - name: Test
+      run:  dotnet test -c Release --no-build --verbosity normal
