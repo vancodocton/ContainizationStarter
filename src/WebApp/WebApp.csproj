@@ -7,6 +7,7 @@
     <UserSecretsId>aspnet-WebApp-e032a4dd-527c-4a46-8ea7-d140932ac644</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
