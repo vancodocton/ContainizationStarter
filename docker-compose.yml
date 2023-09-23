@@ -6,10 +6,29 @@ services:
     build:
       context: .
       dockerfile: src/WebApp/Dockerfile
+    depends_on:
+      - "sqlserver"
 
   webapi:
     image: ${DOCKER_REGISTRY-}webapi
     build:
       context: .
       dockerfile: src/WebApi/Dockerfile
+    depends_on:
+      - "sqlserver"
 
+  sqlserver:
+    container_name: "MSSQL"
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    shm_size: 1gb
+    volumes:
+      - mssql22:/var/opt/mssql
+    ports:
+      - "1434:1433"
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "password123!"
+
+volumes:
+  mssql22:
+  
