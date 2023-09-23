@@ -33,7 +33,7 @@ jobs:
       run: dotnet build ./ContainizationStarter.sln -c Release --no-restore
 
     - name: Format Checking
-      run: dotnet format ./ContainizationStarter.sln --no-restore --verify-no-changes
+      run: dotnet format ./ContainizationStarter.sln --no-restore --verify-no-changes -v diag
 
     - name: Test
       run:  dotnet test ./ContainizationStarter.sln -c Release --no-build --verbosity normal
