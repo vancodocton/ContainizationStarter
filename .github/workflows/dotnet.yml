@@ -26,14 +26,14 @@ jobs:
 
     - name: Restore dependencies
       run: |
-        dotnet restore --locked-mode
+        dotnet restore ./ContainizationStarter.sln --locked-mode
         dotnet tool restore
 
     - name: Build
-      run: dotnet build -c Release --no-restore
+      run: dotnet build ./ContainizationStarter.sln -c Release --no-restore
 
     - name: Format Checking
-      run: dotnet format --no-restore --verify-no-changes
+      run: dotnet format ./ContainizationStarter.sln --no-restore --verify-no-changes
 
     - name: Test
-      run:  dotnet test -c Release --no-build --verbosity normal
+      run:  dotnet test ./ContainizationStarter.sln -c Release --no-build --verbosity normal
