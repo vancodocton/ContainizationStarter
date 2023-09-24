@@ -18,7 +18,6 @@ services:
       - "sqlserver"
 
   sqlserver:
-    container_name: "MSSQL"
     image: "mcr.microsoft.com/mssql/server:2022-latest"
     shm_size: 1gb
     volumes:
