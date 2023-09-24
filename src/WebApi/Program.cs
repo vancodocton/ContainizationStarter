@@ -23,3 +23,11 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+
+namespace WebApi
+{
+    public partial class Program
+    {
+    }
+}
