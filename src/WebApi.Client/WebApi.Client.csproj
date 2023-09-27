@@ -7,9 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <OpenApiReference Include="OpenAPIs\swagger.json" CodeGenerator="NSwagCSharp" Namespace="WebApi.Clients" Options="/GenerateClientInterfaces:true /UseBaseUrl:false" ClassName="WebApiClient">
-      <SourceUri>http://host.docker.internal:8001/swagger/v1/swagger.json</SourceUri>
-    </OpenApiReference>
+    <OpenApiProjectReference Include="..\WebApi\WebApi.csproj">
+      <CodeGenerator>NSwagCSharp</CodeGenerator>
+      <Options>/GenerateClientInterfaces:true /UseBaseUrl:false</Options>
+    </OpenApiProjectReference>
   </ItemGroup>
 
   <ItemGroup>

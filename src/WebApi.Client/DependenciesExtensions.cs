@@ -1,7 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
 
-using WebApi.Clients;
-
 namespace WebApi.Client;
 
 public static class DependenciesExtensions
