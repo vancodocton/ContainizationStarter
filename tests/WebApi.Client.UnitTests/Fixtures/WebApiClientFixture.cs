@@ -1,7 +1,5 @@
 using Microsoft.AspNetCore.Mvc.Testing;
 
-using WebApi.Clients;
-
 namespace WebApi.Client.UnitTests.Fixtures;
 
 public class WebApiClientFixture : IDisposable
