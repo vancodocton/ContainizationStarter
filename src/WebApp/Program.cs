@@ -45,3 +45,10 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+namespace WebApp
+{
+    partial class Program
+    {
+    }
+}
