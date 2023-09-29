@@ -22,4 +22,8 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WebApi.Client\WebApi.Client.csproj" />
+  </ItemGroup>
+
 </Project>

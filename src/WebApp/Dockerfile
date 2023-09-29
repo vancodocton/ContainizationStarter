@@ -10,6 +10,8 @@ WORKDIR /src
 COPY ["Directory.Packages.props", "."]
 COPY ["Directory.Build.props", "."]
 COPY ["src/WebApp/WebApp.csproj", "src/WebApp/"]
+COPY ["src/WebApi.Client/WebApi.Client.csproj", "src/WebApi.Client/"]
+COPY ["src/WebApi/WebApi.csproj", "src/WebApi/"]
 RUN dotnet restore "src/WebApp/WebApp.csproj"
 COPY . .
 WORKDIR "/src/src/WebApp"
