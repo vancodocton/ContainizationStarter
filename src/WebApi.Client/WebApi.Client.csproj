@@ -7,10 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <OpenApiProjectReference Include="..\WebApi\WebApi.csproj">
+    <OpenApiReference Include="OpenAPIs\WebApi.json">
+      <SourceUri>https://localhost:7276/swagger/v1/swagger.json</SourceUri>
       <CodeGenerator>NSwagCSharp</CodeGenerator>
       <Options>/GenerateClientInterfaces:true /UseBaseUrl:false</Options>
-    </OpenApiProjectReference>
+    </OpenApiReference>
   </ItemGroup>
 
   <ItemGroup>
