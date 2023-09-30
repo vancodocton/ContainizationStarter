@@ -8,6 +8,7 @@ services:
       dockerfile: src/WebApp/Dockerfile
     depends_on:
       - "sqlserver"
+      - "webapi"
 
   webapi:
     image: ${DOCKER_REGISTRY-}webapi
