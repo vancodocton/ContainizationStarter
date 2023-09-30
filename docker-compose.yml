@@ -25,6 +25,13 @@ services:
       - mssql22:/var/opt/mssql
     ports:
       - "1434:1433"
+    healthcheck:
+      test: /opt/mssql-tools/bin/sqlcmd -U "sa" -P "$$MSSQL_SA_PASSWORD" -Q "select 1" -b
+      start_period: 1m
+      start_interval: 1s
+      timeout: 10s
+      interval: 5s
+      retries: 3
     environment:
       ACCEPT_EULA: "Y"
       MSSQL_SA_PASSWORD: "password123!"
