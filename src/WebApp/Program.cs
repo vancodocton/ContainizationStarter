@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
+using WebApi.Client;
+
 using WebApp.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +16,10 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddRazorPages();
+
+var webApiUrl = builder.Configuration.GetValue<string>("BaseUrls:WebApi");
+ArgumentException.ThrowIfNullOrEmpty(webApiUrl);
+builder.Services.AddWebApiClient(webApiUrl);
 
 var app = builder.Build();
 
@@ -39,3 +45,10 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+namespace WebApp
+{
+    partial class Program
+    {
+    }
+}

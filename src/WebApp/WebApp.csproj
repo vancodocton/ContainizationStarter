@@ -26,4 +26,8 @@
     <ProjectReference Include="..\WebApi.Client\WebApi.Client.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <InternalsVisibleTo Include="WebApp.IntegrationTests" />
+  </ItemGroup>
+
 </Project>
