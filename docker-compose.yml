@@ -6,11 +6,15 @@ services:
     build:
       context: .
       dockerfile: src/WebApp/Dockerfile
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     depends_on:
       - "sqlserver"
 
   webapi:
     image: ${DOCKER_REGISTRY-}webapi
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     build:
       context: .
       dockerfile: src/WebApi/Dockerfile
@@ -20,6 +24,8 @@ services:
   sqlserver:
     image: "mcr.microsoft.com/mssql/server:2022-latest"
     shm_size: 1gb
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     volumes:
       - mssql22:/var/opt/mssql
     ports:
