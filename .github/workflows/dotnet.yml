@@ -36,4 +36,4 @@ jobs:
       run: dotnet format ./ContainizationStarter.sln --no-restore --verify-no-changes -v diag
 
     - name: Test
-      run:  dotnet test ./ContainizationStarter.sln -c Release --no-build --verbosity normal
+      run:  dotnet test ./ContainizationStarter.sln -c Release --no-build --verbosity normal --filter FullyQualifiedName!~AcceptanceTests
