@@ -3,7 +3,8 @@
 bool isHealthy = false;
 try
 {
-    var response = await client.GetAsync(args[0]);
+    var uriBuilder = new UriBuilder(args[0]);
+    var response = await client.GetAsync(uriBuilder.Uri);
     if (response.IsSuccessStatusCode)
         isHealthy = true;
 }
