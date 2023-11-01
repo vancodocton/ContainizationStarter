@@ -7,6 +7,7 @@ FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ["Directory.Packages.props", "."]
 COPY ["Directory.Build.props", "."]
+COPY ["src/HealthCheck.Console/HealthCheck.Console.csproj", "src/HealthCheck.Console/"]
 COPY ["tests/HealthCheck.TestingWebApp/HealthCheck.TestingWebApp.csproj", "tests/HealthCheck.TestingWebApp/"]
 RUN dotnet restore "tests/HealthCheck.TestingWebApp/HealthCheck.TestingWebApp.csproj"
 COPY . .
