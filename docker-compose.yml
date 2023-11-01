@@ -34,5 +34,11 @@ services:
       ACCEPT_EULA: "Y"
       MSSQL_SA_PASSWORD: "password123!"
 
+  healthchecktestingwebapp:
+    image: healthchecktestingwebapp
+    build:
+      context: .
+      dockerfile: tests/HealthCheck.TestingWebApp/Dockerfile
+
 volumes:
   mssql22:
