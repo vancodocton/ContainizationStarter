@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace HealthCheck.Console;
 
 internal class Program
@@ -14,8 +16,9 @@ internal class Program
             if (response.IsSuccessStatusCode)
                 isHealthy = true;
         }
-        catch
+        catch (Exception ex)
         {
+            System.Console.WriteLine(ex);
             isHealthy = false;
         }
 
