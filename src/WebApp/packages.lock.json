@@ -552,6 +552,9 @@
           "System.Drawing.Common": "6.0.0"
         }
       },
+      "healthcheck.console": {
+        "type": "Project"
+      },
       "webapi.client": {
         "type": "Project",
         "dependencies": {

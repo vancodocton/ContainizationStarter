@@ -24,6 +24,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WebApi.Client\WebApi.Client.csproj" />
+    <ProjectReference Include="..\HealthCheck.Console\HealthCheck.Console.csproj">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </ProjectReference>
   </ItemGroup>
 
   <ItemGroup>

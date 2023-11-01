@@ -21,4 +21,11 @@
     <InternalsVisibleTo Include="WebApp.IntegrationTests" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HealthCheck.Console\HealthCheck.Console.csproj">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </ProjectReference>
+  </ItemGroup>
+
 </Project>
