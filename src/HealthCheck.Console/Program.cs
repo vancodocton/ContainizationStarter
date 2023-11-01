@@ -29,13 +29,14 @@ public class HealthCheckHttpClient
 
     public async Task<bool> TryHealthCheckForHost(string host)
     {
-        bool isHealthy = false;
+        bool isHealthy;
         try
         {
             var uriBuilder = new UriBuilder(host);
             var response = await _httpClient.GetAsync(uriBuilder.Uri);
-            if (response.IsSuccessStatusCode)
-                isHealthy = true;
+            response.EnsureSuccessStatusCode();
+
+            isHealthy = true;
         }
         catch (Exception ex)
         {
