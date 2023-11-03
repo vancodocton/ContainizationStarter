@@ -6,3 +6,6 @@ services:
     build:
       context: ../..
       dockerfile: src/HealthCheck/tests/TestingWebApp/Dockerfile
+    ports:
+      - "1000:80"
+      - "1001:443"
