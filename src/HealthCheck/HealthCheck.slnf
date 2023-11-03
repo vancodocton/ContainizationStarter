@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "path": "..\\..\\ContainizationStarter.sln",
+    "projects": [
+      "src\\HealthCheck\\src\\Console\\HealthCheck.Console.csproj",
+      "src\\HealthCheck\\tests\\IntegrationTests\\HealthCheck.IntegrationTests.csproj",
+      "src\\HealthCheck\\tests\\TestingWebApp\\HealthCheck.TestingWebApp.csproj"
+    ]
+  }
+}
