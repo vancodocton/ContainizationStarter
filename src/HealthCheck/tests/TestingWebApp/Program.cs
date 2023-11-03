@@ -15,6 +15,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddHealthChecks()
     .AddCheck<TestingHealthCheck>("Testing", HealthStatus.Healthy);
 
+builder.Services.AddHealthChecks()
+    .AddDbContextCheck<ApplicationDbContext>();
+
 var app = builder.Build();
 
 app.MapGet("/SetHealthy/{isHealthy:bool}", (bool isHealthy) =>
