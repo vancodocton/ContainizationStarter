@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\HealthCheck.Console\HealthCheck.Console.csproj" />
+    <ProjectReference Include="..\..\src\Console\HealthCheck.Console.csproj" />
   </ItemGroup>
 
 </Project>

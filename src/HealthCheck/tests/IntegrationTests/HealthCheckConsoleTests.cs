@@ -1,6 +1,6 @@
 using HealthCheck.Console;
 
-namespace HealthCheck.Tests;
+namespace HealthCheck.IntegrationTests;
 
 public class HealthCheckConsoleTests
 {
