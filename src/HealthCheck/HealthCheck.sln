@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck.TestingWebApp",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck.IntegrationTests", "tests\IntegrationTests\HealthCheck.IntegrationTests.csproj", "{B9D1193E-600E-4B22-82FB-3C3F381A9EE7}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{36225BFC-5ECB-4F2F-B0AF-DC6EE6E4D501}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{B9D1193E-600E-4B22-82FB-3C3F381A9EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9D1193E-600E-4B22-82FB-3C3F381A9EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9D1193E-600E-4B22-82FB-3C3F381A9EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36225BFC-5ECB-4F2F-B0AF-DC6EE6E4D501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36225BFC-5ECB-4F2F-B0AF-DC6EE6E4D501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36225BFC-5ECB-4F2F-B0AF-DC6EE6E4D501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36225BFC-5ECB-4F2F-B0AF-DC6EE6E4D501}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,5 +51,8 @@ Global
 		{376E22D3-DE3F-42F3-9744-3047E3548068} = {EDC65997-5CB0-40F1-9B47-8BB0B8065F0D}
 		{7B2CB6C4-F069-479F-BFA7-51E05DDF1489} = {117BD675-3536-43D9-BCB0-28C8F3F54EAB}
 		{B9D1193E-600E-4B22-82FB-3C3F381A9EE7} = {117BD675-3536-43D9-BCB0-28C8F3F54EAB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4202E4F0-032D-4909-A7C2-2C40BBE3BDF3}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  healthcheck.testingwebapp:
+    image: ${DOCKER_REGISTRY-}healthchecktestingwebapp
+    build:
+      context: ../..
+      dockerfile: src/HealthCheck/tests/TestingWebApp/Dockerfile
