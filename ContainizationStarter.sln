@@ -27,11 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Client.UnitTests", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.IntegrationTests", "tests\WebApp.IntegrationTests\WebApp.IntegrationTests.csproj", "{51771A9B-11D7-4656-AB78-A9DD7DDDCD89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck.Console", "src\HealthCheck.Console\HealthCheck.Console.csproj", "{3BCCA28E-D973-4A7D-BAA5-ED01F07E998D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck.Console", "src\HealthCheck\src\Console\HealthCheck.Console.csproj", "{3BCCA28E-D973-4A7D-BAA5-ED01F07E998D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck.Tests", "tests\HealthCheck.Tests\HealthCheck.Tests.csproj", "{2C351049-DD9D-42C9-823B-7A85CB16B4E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck.Tests", "src\HealthCheck\tests\IntegrationTests\HealthCheck.IntegrationTests.csproj", "{2C351049-DD9D-42C9-823B-7A85CB16B4E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck.TestingWebApp", "tests\HealthCheck.TestingWebApp\HealthCheck.TestingWebApp.csproj", "{F470BF14-4534-4151-B005-E94C6B30861C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck.TestingWebApp", "src\HealthCheck\tests\TestingWebApp\HealthCheck.TestingWebApp.csproj", "{F470BF14-4534-4151-B005-E94C6B30861C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

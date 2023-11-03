@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <InternalsVisibleTo Include="HealthCheck.Tests" />
+    <InternalsVisibleTo Include="HealthCheck.IntegrationTests" />
   </ItemGroup>
 
 </Project>
