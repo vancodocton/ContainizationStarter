@@ -9,3 +9,14 @@ services:
     ports:
       - "1000:80"
       - "1001:443"
+    healthcheck:
+      test: [
+        "CMD",
+        "dotnet",
+        "HealthCheck.Console.dll",
+        "http://localhost:80/healthz"
+      ]
+      interval: 5s
+      timeout: 30s
+      retries: 1
+      start_period: 5s
