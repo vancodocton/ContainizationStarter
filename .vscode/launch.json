@@ -19,11 +19,11 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/src/HealthCheck.Console/bin/Debug/net7.0/HealthCheck.Console.dll",
+            "program": "${workspaceFolder}/src/HealthCheck/src/Console/bin/Debug/net7.0/HealthCheck.Console.dll",
             "args": [
                 "https://google.com"
             ],
-            "cwd": "${workspaceFolder}/src/HealthCheck.Console",
+            "cwd": "${workspaceFolder}/src/HealthCheck/src/Console",
             "stopAtEntry": false,
             "console": "internalConsole"
         },
