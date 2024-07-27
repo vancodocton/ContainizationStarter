@@ -25,19 +25,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Client", "src\WebApi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Client.UnitTests", "tests\WebApi.Client.UnitTests\WebApi.Client.UnitTests.csproj", "{B7FADF2F-C937-4553-BF8A-14242C5C7D6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.IntegrationTests", "tests\WebApp.IntegrationTests\WebApp.IntegrationTests.csproj", "{51771A9B-11D7-4656-AB78-A9DD7DDDCD89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp.IntegrationTests", "tests\WebApp.IntegrationTests\WebApp.IntegrationTests.csproj", "{51771A9B-11D7-4656-AB78-A9DD7DDDCD89}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HealthCheck", "HealthCheck", "{CF4A8890-3CF4-47E3-B023-63992097B81A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6F599687-1AE7-4A8C-AC91-060DDFC88417}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck.Console", "src\HealthCheck\src\Console\HealthCheck.Console.csproj", "{3BCCA28E-D973-4A7D-BAA5-ED01F07E998D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCheck.Console", "src\HealthCheck\src\Console\HealthCheck.Console.csproj", "{3BCCA28E-D973-4A7D-BAA5-ED01F07E998D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2066FB4A-1B8F-4FBB-9A51-10B2342069A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck.IntegrationTests", "src\HealthCheck\tests\IntegrationTests\HealthCheck.IntegrationTests.csproj", "{2C351049-DD9D-42C9-823B-7A85CB16B4E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheck.TestingWebApp", "src\HealthCheck\tests\TestingWebApp\HealthCheck.TestingWebApp.csproj", "{F470BF14-4534-4151-B005-E94C6B30861C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCheck.TestingWebApp", "src\HealthCheck\tests\TestingWebApp\HealthCheck.TestingWebApp.csproj", "{F470BF14-4534-4151-B005-E94C6B30861C}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "src\HealthCheck\docker-compose.dcproj", "{36225BFC-5ECB-4F2F-B0AF-DC6EE6E4D501}"
 EndProject
