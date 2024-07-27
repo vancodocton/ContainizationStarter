@@ -4,9 +4,9 @@
     "net8.0": {
       "Microsoft.Extensions.ApiDescription.Client": {
         "type": "Direct",
-        "requested": "[8.0.0, )",
-        "resolved": "8.0.0",
-        "contentHash": "UadNHPNDlovYULAk7Tav9ZiY28+tkZaWuWUmuYoe61wrcI5zQIZqJcVyDhoYDWCZQR/2HxcMrJNlqfJC7jXa8Q=="
+        "requested": "[8.0.7, )",
+        "resolved": "8.0.7",
+        "contentHash": "H0UfAHSpsl5gnlmWiKsiPSe6iQYr2S3AVoivizxwrEQLI9xCKO0CG1tFDVfj1nVscIpZcdDipyQTDhXPUxx3tQ=="
       },
       "Microsoft.Extensions.Http": {
         "type": "Direct",
